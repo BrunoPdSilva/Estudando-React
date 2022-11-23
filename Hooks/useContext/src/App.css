@@ -1,0 +1,14 @@
+div.App {
+  height: 50.2rem;
+  width: 39.3rem;
+
+  padding: 6rem 7rem;
+
+  display: flex;
+  gap: 2.2rem;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 12px;
+  background-color: #202024;
+}
