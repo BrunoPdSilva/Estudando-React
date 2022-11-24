@@ -1,0 +1,13 @@
+main {
+  height: 90vh;
+  padding-inline: 10rem;
+
+  display: flex;
+  align-items: center;
+  gap: 22.2rem;
+}
+
+.side-img {
+  width: 58.7rem;
+  height: 59.3rem;
+}

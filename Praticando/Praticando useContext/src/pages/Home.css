@@ -1,0 +1,13 @@
+div.welcome {
+  width: 100vw;
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.welcome img {
+  width: 30rem;
+  height: 30rem;
+}

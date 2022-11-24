@@ -1,0 +1,21 @@
+form .inputField {
+  margin-bottom: 2.6rem;
+  padding-bottom: 1.2rem;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  border-bottom: 1px solid #cacaca;
+
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.1rm;
+
+  color: var(--subtitle);
+}
+
+form .inputField:focus-within {
+  border-bottom: 1px solid var(--title);
+  color: var(--title);  
+}

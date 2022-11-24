@@ -1,0 +1,37 @@
+nav {
+  width: 100vw;
+  height: 7.6rem;
+
+  padding-inline: 10rem 14.6rem;
+
+  padding-block: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--navbar);
+}
+
+nav .user {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+nav .navLinks {
+  display: flex;
+  gap: 2.2rem;
+}
+
+nav .navLinks li:nth-child(4) {
+  margin-left: 4.8rem;
+}
+
+nav .navLinks a {
+  transition: 0.3s ease;
+}
+
+nav .navLinks a:hover {
+  filter: brightness(1.2);
+}
