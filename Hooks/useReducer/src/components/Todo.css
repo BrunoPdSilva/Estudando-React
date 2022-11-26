@@ -1,0 +1,20 @@
+div.todoContainer {
+  width: 55.6rem;
+  height: 4.6rem;
+
+  padding: 1.2rem;
+
+  background-color: var(--main-color);
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 0.8rem;
+}
+
+div.todoContainer .controlBtns {
+  display: flex;
+  gap: 0.8rem;
+}

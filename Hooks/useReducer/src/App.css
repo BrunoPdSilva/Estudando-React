@@ -1,19 +1,49 @@
 div.app {
-  padding: 100px;
+  margin-top: 7.2rem;
 
   display: flex;
-  gap: 16px;
-
-  border-radius: 6px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  flex-direction: column;
+  align-items: center;
 }
 
-button {
-  font-weight: bold;
+form  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 
-  background-color: #52b788;
+  margin-bottom: 4.6rem;
+}
+
+form input {
+  width: 35.5rem;
+  height: 4.6rem;
+
+  background-color: var(--input);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+
+  padding-left: 1.2rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: #fff;
+}
+
+form button {
+  width: 46.6rem;
+  height: 4.6rem;
+
+  background-color: var(--main-color);
   border-radius: 6px;
   border: none;
 
+  transition: 0.3s ease;
+}
+
+form button:hover {
   cursor: pointer;
+  filter: brightness(1.1);
 }
