@@ -18,3 +18,7 @@ div.todoContainer .controlBtns {
   display: flex;
   gap: 0.8rem;
 }
+
+div.todoContainer .controlBtns span {
+  cursor: pointer;
+}

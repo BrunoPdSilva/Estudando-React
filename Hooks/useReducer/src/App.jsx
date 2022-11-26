@@ -4,18 +4,27 @@ import { Todo } from './components/Todo';
 
 import './App.css';
 
-const ACTIONS = {
+export const ACTIONS = {
   ADD_TODO: 'addTodo',
+  TOGGLE_TODO: 'toggleTodo',
+  DELETE_TODO: 'deleteTodo',
 };
 
-function reducer(state, action) {
-  console.log(state);
-
+function reducer(todos, action) {
   switch (action.type) {
     case ACTIONS.ADD_TODO:
-      return [...state, newTodo(action.payload.name)];
+      return [...todos, newTodo(action.payload.name)];
+    case ACTIONS.TOGGLE_TODO:
+      return todos.map(todo => {
+        if (todo.id === action.payload.id) {
+          return { ...todo, complete: !todo.complete };
+        }
+        return todo;
+      });
+    case ACTIONS.DELETE_TODO:
+      return todos.filter(todo => todo.id !== action.payload.id);
     default:
-      return state;
+      return todos;
   }
 }
 
@@ -37,7 +46,6 @@ export default function App() {
     setName('');
   }
 
-
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
@@ -53,7 +61,7 @@ export default function App() {
       </form>
 
       {todos.map(todo => {
-        return <Todo key={todo.id} name={todo.name} />;
+        return <Todo key={todo.id} todo={todo} dispatch={dispatch} />;
       })}
     </div>
   );
