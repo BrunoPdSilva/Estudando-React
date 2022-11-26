@@ -1,0 +1,18 @@
+:root {
+  background-color: #202024;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FFF;
+}
+
